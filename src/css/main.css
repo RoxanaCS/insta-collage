@@ -3,6 +3,32 @@
 }
 body{
   padding-top: 10px;
+  background: linear-gradient(#64B587, #C17D4D);
+  color: white;
+}
+/* label color */
+ .input-field label {
+   color: #ffff;
+ }
+ /*para las líneas de la o*/
+.line-o{
+   font-size: 1.5em;
+}
+.line-o:before {
+   content: "";
+   display: inline-block;
+   border: 0.01em solid white;
+   width: 15em;
+   margin-bottom: 0.6em;
+   margin-right: 1em;
+}
+.line-o:after{
+   content: "";
+   display: inline-block;
+   border: 0.01em solid white;
+   width: 15em;
+   margin-bottom: 0.6em;
+   margin-left: 0.7em;
 }
 #smallOne{
   background-color: red;

@@ -10,35 +10,88 @@
 </head>
 <body>
   <section>
-    <div class="container">
+    <div class="container" id="init">
+      <div class="row">
+        <div class="col s6">
+          <select class="browser-default N/A transparent">
+            <option value="" disabled selected>Selecciona tu idioma</option>
+            <option value="1">Idioma Español (España)</option>
+            <option value="2">Idioma Inglés</option>
+            <option value="3">Idioma Portugués</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <img src="src\images\insta_logo.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Usuario</label>
+        </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="password" type="password" class="validate">
+         <label for="password">Contraseña</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col s12">
+         <a class="waves-effect waves-light btn N/A transparent" id="button">Iniciar sesión</a>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col s12">
+         <p>¿Has olvidado tu información de inicio de sesión? Obtén ayuda</p>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col s12">
+         <p class="line-o">o</p>
+       </div>
+     </div>
+    </div>
+  </section>
+  <footer class="page-footer N/A transparent">
+    <div class="footer-copyright">
+      <div class="container"> ¿No tienes cuenta?
+        <a class="grey-text" href="#!">Regístrate</a>
+      </div>
+    </div>
+  </footer>
+  <section>
+    <div class="container" id="collage">
       <div class="row clearMargin">
         <div class="col s6">
           <div class="row clearMargin">
             <div class="col s12" id="smallOne" ondragover="permitirDrop(event)" ondrop="drop(event)">
-              
+
             </div>
             <div class="col s12" id="smallTwo" ondragover="permitirDrop(event)" ondrop="drop(event)">
-              
+
             </div>
           </div>
         </div>
         <div class="col s6" id="imageTall" ondragover="permitirDrop(event)" ondrop="drop(event)">
-          
+
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="container">
+    <div class="container" id="photo-booth">
       <div class="row clearMargin">
         <div class="col s12" id="logo">
-          
+
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="container">
+    <div class="container" id="photos">
       <div class="row clearMargin">
         <div class="col s12 imgContainer">
           <!-- <img id="foto1" src="src/images/panda1.jpg" data-img="src/images/panda1.jpg" draggable="true" ondragstart="drag(event)"> -->
