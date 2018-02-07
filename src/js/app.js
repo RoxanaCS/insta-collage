@@ -5,9 +5,8 @@ $(document).ready(function() {
   images();
 });
 
-
 $('#button').click(function() {
-  if ($('#password').val() === '' || $('#password').val() === '123456' || $('#password').val().length < 5) {
+  if ($('#password').val() === '' || $('#password').val() === '123456' || $('#password').val().length <= 5) {
     alert('Ingrese una contraseña valida');
   } else {
     $('#collage').show();
