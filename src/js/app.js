@@ -6,8 +6,8 @@ $(document).ready(function() {
 });
 
 $('#button').click(function() {
-  if ($('#password').val() === '' || $('#password').val() === '123456' || $('#password').val().length <= 5) {
-    alert('Ingrese una contraseña valida');
+  if ($('#email').val() === '' || $('#password').val() === '' || $('#password').val() === '123456' || $('#password').val().length <= 5) {
+    alert('Ingrese un usuario/contraseña valida');
   } else {
     $('#collage').show();
     $('#photo-booth').show();
