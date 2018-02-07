@@ -1,0 +1,42 @@
+.clearMargin{
+  margin: 0;
+}
+body{
+  padding-top: 10px;
+}
+#smallOne{
+  background-color: red;
+  height: 25vh;
+  /*border: 10px solid #FFF;*/
+  background-position: center;
+}
+#smallTwo{
+  background-color: pink;
+  height: 25vh;
+  /*border: 10px solid #FFF;*/
+  background-position: center;
+}
+#imageTall{
+  background-color: purple;
+  height: 50vh;
+  /*border: 10px solid #FFF;*/
+  background-position: center;
+}
+#logo{
+  background-color: grey;
+  height: 3em;
+}
+.row .col.imgContainer{
+  padding: 0;
+  display: flex;
+}
+.imageDiv{
+/*  background-image: url(../images/panda1.jpg);*/
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 20%;
+  padding-top: 20%;
+  margin: 0;
+}

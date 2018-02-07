@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>InstaDrag</title>
+  <link rel="stylesheet" href="src\css\materialize.min.css">
+  <link rel="stylesheet" href="src\css\main.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="row clearMargin">
+        <div class="col s6">
+          <div class="row clearMargin">
+            <div class="col s12" id="smallOne" ondragover="permitirDrop(event)" ondrop="drop(event)">
+              
+            </div>
+            <div class="col s12" id="smallTwo" ondragover="permitirDrop(event)" ondrop="drop(event)">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col s6" id="imageTall" ondragover="permitirDrop(event)" ondrop="drop(event)">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row clearMargin">
+        <div class="col s12" id="logo">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row clearMargin">
+        <div class="col s12 imgContainer">
+          <!-- <img id="foto1" src="src/images/panda1.jpg" data-img="src/images/panda1.jpg" draggable="true" ondragstart="drag(event)"> -->
+          <div id="foto1" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda1.jpg"></div>
+          <div id="foto2" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda2.jpg"></div>
+          <div id="foto3" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda3.jpg"></div>
+          <div id="foto4" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda4.jpg"></div>
+          <div id="foto4" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda4.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="src\js\materialize.min.js"></script>
+<script type="text/javascript" src="src\js\app.js"></script>
+</body>
+</html>
