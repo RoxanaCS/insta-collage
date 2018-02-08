@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('#photos').hide();
   images();
 });
-
+ 
 $('#button').click(function() {
   if ($('#email').val() === '' || $('#password').val() === '' || $('#password').val() === '123456' || $('#password').val().length <= 5) {
     alert('Ingrese un usuario/contraseña valida');
