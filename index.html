@@ -6,14 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>InstaDrag</title>
   <link rel="stylesheet" href="src\css\materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
   <link rel="stylesheet" href="src\css\main.css">
 </head>
 <body>
   <section>
-    <div class="container" id="init">
-      <div class="row">
-        <div class="col s6">
-          <select class="browser-default N/A transparent">
+    <div class="container center" id="init">
+      <div class="row clearMargin">
+        <div class="col s12 m6 offset-m3">
+          <select class="browser-default transparent">
             <option value="" disabled selected>Selecciona tu idioma</option>
             <option value="1">Idioma Español (España)</option>
             <option value="2">Idioma Inglés</option>
@@ -22,61 +23,62 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12">
+        <div class="col s12 m6 offset-m3">
           <img src="src\images\insta_logo.png" alt="">
         </div>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
+      <div class="row clearMargin">
+        <div class="input-field col s12 m6 offset-m3">
           <input id="email" type="email" class="validate">
           <label for="email">Usuario</label>
         </div>
-     </div>
-     <div class="row">
-       <div class="input-field col s12">
-         <input id="password" type="password" class="validate">
-         <label for="password">Contraseña</label>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col s12">
-         <a class="waves-effect waves-light btn N/A transparent" id="button">Iniciar sesión</a>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col s12">
-         <p>¿Has olvidado tu información de inicio de sesión? Obtén ayuda</p>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col s12">
-         <p class="line-o">o</p>
-       </div>
-     </div>
-    </div>
-  </section>
-  <footer class="page-footer N/A transparent">
-    <div class="footer-copyright">
-      <div class="container"> ¿No tienes cuenta?
-        <a class="grey-text" href="#!">Regístrate</a>
+      </div>
+      <div class="row clearMargin">
+        <div class="input-field col s12 m6 offset-m3">
+          <input id="password" type="password" class="validate">
+          <label for="password">Contraseña</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <a class="waves-effect waves-light btn N/A transparent" id="button">Iniciar sesión</a>
+          <p>¿Has olvidado tu información de inicio de sesión? <strong>Obtén ayuda</strong></p>
+          <p class="line-o">o</p>
+          <p class="facebookSesion">
+            <img src="src/images/facebook-logo.png" alt="">
+            Inicia sesión con Facebook
+          </p>
+        </div>
       </div>
     </div>
-  </footer>
+    <div class="row footerReg clearMargin center">
+      <div class="col s12">
+        <div>
+          <p>¿No tienes cuenta? <a class="white-text" href="#!"><strong>Regístrate</strong></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav>
+    <div class="nav-wrapper  grey darken-4">
+      <a href="#" class="brand-logo center"><img class="imgLogo" src="src/images/Instagram_logo.png" alt=""> Insta-Collage</a>
+    </div>
+  </nav>
   <section>
     <div class="container" id="collage">
       <div class="row clearMargin">
         <div class="col s6">
           <div class="row clearMargin">
-            <div class="col s12" id="smallOne" ondragover="permitirDrop(event)" ondrop="drop(event)">
-
+            <div class="col s12 borderBottom borderLeft" id="smallOne" ondragover="permitirDrop(event)" ondrop="drop(event)">
+              <!-- Primer Contenedor del Collage -->
             </div>
-            <div class="col s12" id="smallTwo" ondragover="permitirDrop(event)" ondrop="drop(event)">
-
+            <div class="col s12 borderLeft" id="smallTwo" ondragover="permitirDrop(event)" ondrop="drop(event)">
+              <!-- Segundo Contenedor del Collage -->
             </div>
           </div>
         </div>
-        <div class="col s6" id="imageTall" ondragover="permitirDrop(event)" ondrop="drop(event)">
-
+        <div class="col s6 borderLeft borderRight" id="imageTall" ondragover="permitirDrop(event)" ondrop="drop(event)">
+          <!-- Tercer Contenedor del Collage -->
         </div>
       </div>
     </div>
@@ -84,8 +86,8 @@
   <section>
     <div class="container" id="photo-booth">
       <div class="row clearMargin">
-        <div class="col s12" id="logo">
-
+        <div class="col s12 grey darken-4" id="logo">
+          <!-- Separador -->
         </div>
       </div>
     </div>
@@ -93,19 +95,41 @@
   <section>
     <div class="container" id="photos">
       <div class="row clearMargin">
-        <div class="col s12 imgContainer">
+        <div class="col s12">
           <!-- <img id="foto1" src="src/images/panda1.jpg" data-img="src/images/panda1.jpg" draggable="true" ondragstart="drag(event)"> -->
-          <div id="foto1" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda1.jpg"></div>
-          <div id="foto2" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda2.jpg"></div>
-          <div id="foto3" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda3.jpg"></div>
-          <div id="foto4" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda4.jpg"></div>
-          <div id="foto4" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda4.jpg"></div>
+          <div class="row clearMargin">
+            <div class="col s12 imgContainer">
+              <div id="foto1" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda1.jpg"></div>
+              <div id="foto2" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda2.jpg"></div>
+              <div id="foto3" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda3.jpg"></div>
+              <div id="foto4" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda4.jpg"></div>
+              <div id="foto5" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/panda5.jpg"></div>
+            </div>
+          </div>
+
+          <div class="row clearMargin">
+            <div class="col s12 imgContainer">
+              <div id="foto6" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/nutria1.jpg"></div>
+              <div id="foto7" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/nutria2.jpg"></div>
+              <div id="foto8" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/nutria3.jpg"></div>
+              <div id="foto9" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/nutria4.jpg"></div>
+              <div id="foto10" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/nutria5.jpg"></div>
+            </div>
+          </div>
+          <div class="row clearMargin">
+            <div class="col s12 imgContainer">
+              <div id="foto11" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/puppy1.jpg"></div>
+              <div id="foto12" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/bunny1.jpg"></div>
+              <div id="foto13" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/hamster1.jpg"></div>
+              <div id="foto14" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/pig1.jpg"></div>
+              <div id="foto15" class="imageDiv" draggable="true" ondragstart="drag(event)" data-img="src/images/sloth1.jpg"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="src\js\materialize.min.js"></script>
 <script type="text/javascript" src="src\js\app.js"></script>
 </body>

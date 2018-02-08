@@ -13,7 +13,7 @@ $('#button').click(function() {
     $('#photo-booth').show();
     $('#photos').show();
     $('#init').hide();
-    $('footer').hide();
+    $('.footerReg').hide();
   }
 });
 
