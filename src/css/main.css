@@ -121,7 +121,6 @@ input[type=search]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #FFF;
 }
-
 /* Text inputs */
 input:not([type]),
 input[type=text]:not(.browser-default),
