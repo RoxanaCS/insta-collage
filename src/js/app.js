@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('#collage').hide();
   $('#photo-booth').hide();
   $('#photos').hide();
+  $('.bannerTop').hide();
   images();
 });
  
@@ -12,6 +13,7 @@ $('#button').click(function() {
     $('#collage').show();
     $('#photo-booth').show();
     $('#photos').show();
+    $('.bannerTop').show();
     $('#init').hide();
     $('.footerReg').hide();
   }
